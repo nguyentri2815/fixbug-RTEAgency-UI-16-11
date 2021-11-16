@@ -1,0 +1,130 @@
+// Common buttons
+
+.btn {
+  border: 0;
+  &.btn-primary,
+  &.btn-orange,
+  &.btn-outline-primary {
+    min-width: 89px;
+    height: 32px;
+    color: $white;
+  }
+  &.shadow {
+    box-shadow: rgba(22, 22, 22, 0.5) -2px 2px 3px !important;
+  }
+  &.active {
+    background-color: $orange !important;
+  }
+  &.btn-primary {
+    border: none;
+    &,
+    &:focus {
+      background-color: $primary;
+    }
+    &:hover {
+      background-color: black;
+      box-shadow: 0 2px 4px rgba(49, 50, 51, 0.2);
+    }
+    &:active {
+      background-color: white;
+    }
+    &:disabled,
+    &.disabled {
+      background-color: grey;
+    }
+  }
+  &.btn-dark {
+    border: none;
+    &,
+    &:focus {
+      background-color: $bg-black;
+    }
+    &:hover {
+      background-color: black;
+      box-shadow: 0 2px 4px rgba(49, 50, 51, 0.2);
+    }
+    &:disabled,
+    &.disabled {
+      background-color: grey;
+    }
+  }
+  &.btn-orange {
+    border: none;
+    &,
+    &:focus {
+      background-color: $orange-darker;
+    }
+    &:hover {
+      background-color: black;
+      box-shadow: 0 2px 4px rgba(49, 50, 51, 0.2);
+    }
+    //&:active {background-color: white;}
+    &:disabled,
+    &.disabled {
+      background-color: grey;
+    }
+  }
+  &.btn-3xl {
+    width: 150px;
+    height: 70px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    border-radius: 10px;
+  }
+  &.btn-2xl {
+    min-width: 300px;
+    height: 56px;
+    font-size: 1.4rem;
+    border-radius: 0.4rem;
+    box-shadow: -2px 3px 4px 0px #9c9696;
+  }
+  &.btn-xl {
+    min-width: 210px;
+    height: 46px;
+    font-size: 1.5rem;
+    box-shadow: -2px 3px 4px 0px #9c9696;
+    &.h-8 {
+      height: 70px;
+    }
+  }
+  &.btn-lg {
+    min-width: 210px;
+    height: 44px;
+    box-shadow: -2px 3px 4px 0px #9c9696;
+  }
+  &.btn-md {
+    min-width: 150px;
+    height: 45px;
+    font-size: 1.3rem;
+    box-shadow: -2px 3px 4px 0px #9c9696;
+  }
+  &.btn-sm {
+    min-width: 100px;
+    height: 27px;
+    font-size: $value_0_75;
+  }
+  &.btn-xs {
+    min-width: 96px;
+    height: 25px;
+    font-size: $value_0_75;
+  }
+  &.btn-2xs {
+    min-width: 53px;
+    height: 22px;
+    font-size: $value_0_75;
+    margin-bottom: 5px;
+  }
+  &.justify-content-start {
+    min-width: 210px;
+    height: 35px;
+    font-size: 1.25rem;
+  }
+  &-file {
+    line-height: 1;
+  }
+}
+a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

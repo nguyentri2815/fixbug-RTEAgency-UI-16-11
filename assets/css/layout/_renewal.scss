@@ -1,0 +1,24 @@
+//renewal-page 
+.renewal-page {
+    .section-secondary{
+      &+.px-2.pt-2{
+        padding-left: 1rem!important;
+        width: 100%;
+        margin: 0 auto!important;
+      }
+    }
+    .table{
+        h5{
+            white-space: nowrap;
+            padding-right: 10px;
+        }
+        .my-4.mx-4{
+            margin: 1rem 0 0 0.5rem!important;
+            
+        }
+    }
+    .btn.btn-xl.h-8 {
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}

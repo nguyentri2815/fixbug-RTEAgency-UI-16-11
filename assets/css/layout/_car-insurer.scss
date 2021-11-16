@@ -1,0 +1,51 @@
+.car-insurer-page{
+    .card{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 15px;
+        border: none!important;
+        box-shadow: none!important;
+        .btn.min-h-4.px-4.btn-primary{
+            min-width: initial;
+            width: 100%;
+            padding: 0!important;
+        }
+        .btn.btn-md.btn-orange{
+            white-space: nowrap;
+            overflow: hidden;
+            min-width: initial;
+            width: 90%;
+        }
+        .table.table-borderless.bg-transparent{
+            td.p-0{
+                &:first-child{
+                    width: 28%;
+                }
+                &:last-child{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    .btn{
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    }
+    .card-body{
+        box-shadow: 0 0 10px 0px #000000bd;
+        border: 2px solid #2f528f !important;
+        
+        .min-h-230{
+            & > .text-center{
+                height: 60px;
+                margin-bottom: 2rem;
+                img{
+                    margin-bottom: 0;
+                    max-height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

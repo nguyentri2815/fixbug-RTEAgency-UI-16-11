@@ -1,0 +1,72 @@
+//common table
+
+.table {
+    th, td {padding: $value_0_25; vertical-align: middle;}
+    tr, td {font-size: $value_1_2;}
+    thead tr td, tr.group td, &.table-borderless td {padding-left: $value_2;}
+    &.border-top {border-width: 3px!important; border-color: $bg-black!important;}
+    tr {
+        td {padding-left: $value_4;
+            &:last-child {padding-right: $value_1; text-align: right;}
+        }
+        &.group {
+            td {font-weight: $font-weight-bold;}
+        }
+    }
+    thead {
+        tr {background-color: $bg-silver-darkest; color: white; border-bottom: $border-size-xl white;
+            td {font-weight: $font-weight-medium;}
+        }
+    }
+    &.table-borderless {background-color: $bg-gray-lightest;
+        th, td {padding-top: 0; padding-bottom: 0; background-color: transparent; border: 0!important;}
+        tr {background-color: transparent!important;
+            td {text-align: left;}
+            &:first-child {
+                td {padding-top: $value_0_5;}
+            }
+            &:last-child {
+                td {padding-bottom: $value_0_5;}
+            }
+        }
+    }
+    &.table-bordered {
+        th, td {border: $border-size-md white;}
+        .table-borderless {margin-bottom: 0; background-color: transparent;
+            tr {
+                td {padding-top: 0; padding-bottom: 0;
+                    &:first-child {width: 17%; border-right: $border-size-md white!important;}
+                    &:last-child {padding-left: $value_0_5;}
+                }
+            }
+        }
+    }
+    &.table-striped {
+        tbody {
+            tr {
+                &:nth-of-type(odd) {background: $bg-gray-lighter;}
+                &:nth-of-type(even) {background: $bg-silver-lighter;}
+            }
+        }
+    }
+    &-xs {
+        td {padding-top: 0; padding-bottom: 0;}
+    }
+    &-md {
+        td {padding-top: $value_0_25; padding-bottom: $value_0_25;}
+    }
+}
+.border-bottom{
+    &.border-orange-bottom{
+        border-bottom: 4px solid orange !important;
+    }
+    &.border-orange-thicker{
+        border-bottom: 5px solid orange !important;
+    }
+}
+.border-orange{
+    border: 2px solid $orange;
+}
+.border-3{
+    border: 3px solid $primary;
+}

@@ -1,0 +1,116 @@
+//my-policy-submit-page
+  .my-policy-submit-page{
+      .container{
+            min-width: 100%!important;
+            padding: 0;
+            .text-right{
+                .btn:last-child{
+                    margin-right: 10px;
+                }
+            }
+      }
+    .text-black.p-0{
+        white-space: nowrap;
+        padding:1px 5px !important ;
+    }
+    .table{
+
+        tr{
+            td{
+                padding: 5px 10px!important;
+                &:first-child{
+                    white-space: nowrap;
+                    padding-right: 10px!important;
+                }
+            }
+        }
+    }
+    .col-3{
+        padding-right: 0;
+    }
+  }
+
+.my-policy-thanks-page{
+.btn{
+    margin-bottom: 1rem;
+}
+.table{
+    h5{
+        white-space: nowrap;
+        padding-right: 10px;
+    }
+}
+}
+//my-policy-login-page
+.my-policy-login-page{
+.mt-2.mb-5.px-5{
+    padding-left: 0rem!important;
+    padding-right: 0rem!important;
+} 
+}
+//my-policy-trans-page
+.my-policy-trans-page{
+    .overflow-auto.h-800.scrollbar{
+        overflow-x: hidden!important;
+    }
+    .form-group.d-flex.align-items-center.align-content-center.col-4{
+        flex: 0 0 100%;
+      max-width: 100%;
+      }
+    .table{
+        .border-bottom.border-orange-bottom{
+            border-bottom: 0px solid orange !important;
+        }
+    }
+    .table-responsive{
+        padding-bottom: 0.8rem;
+        margin-bottom: 0.2rem;
+        // border-bottom: 4px solid orange !important;
+        .table{
+            margin-bottom: 0;
+        }
+    }
+    .row.display-6{
+        font-size: 1.1rem!important;
+        border-bottom: 4px solid $orange;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        .btn,.custom-select{
+            font-size: 1.1rem!important;
+            min-width: initial!important;
+            height: 37px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: 0;
+            margin-bottom: 6px!important;
+        }
+        .col-xl-7.px-1{
+            padding: 0 2px!important;
+        }
+        .col-lg-6.mx-auto{
+            width: max-content;
+        }
+        .col-lg-2.text-center{
+            img{
+              max-width: 110px;
+            }
+            .position-relative.w-60{
+                height: 34px;
+                img{
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    height: 100%;
+                    object-fit: contain;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    max-width: 100px;
+                    min-width: 100px;
+                }
+            }
+        }
+    }
+    .overflow-auto.h-800.scrollbar{
+        height: initial;
+    }
+}

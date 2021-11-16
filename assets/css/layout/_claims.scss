@@ -1,0 +1,52 @@
+//claim-notification-page
+.claim-notification-page{
+    .section-secondary{
+        text-align: left!important;
+    }
+    form{
+        padding-left: 8px;
+        &.mt-3{
+            margin-top: 0.5rem !important;
+        }
+    }
+    .table{
+        background: transparent;
+        overflow: hidden;
+        tr{
+            th{
+                white-space: nowrap;
+            }
+        }
+        .btn{
+            font-size: $value_0_875;
+            width: 100%;
+            &:last-child{
+                margin-top: 1rem;
+            }
+        }
+    }
+    
+    .form-control.w-30{
+        width: 100%
+    }
+    
+}
+
+//claim-thanks-page
+.claim-thanks-page{
+    overflow: hidden;
+    .table-responsive{
+        padding-left: 1rem;
+    }
+    .table{
+        tr{
+            th{
+                white-space: nowrap;
+            }
+        }
+    }
+    .btn{
+        margin-bottom: 1rem;
+        font-size: $value_1_2;
+    }
+}

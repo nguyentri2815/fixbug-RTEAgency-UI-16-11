@@ -1,0 +1,173 @@
+
+.car-ins-page .border-bottom.border-orange-thicker .btn {
+    justify-content: left !important;
+}
+
+.car-ins-page .nav {
+    display: block !important;
+}
+
+.custom-select-none {
+    background-position-x: right;
+}
+
+.form-check-radio a {
+    padding: 0 10px;
+    min-width: 16rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.125rem;
+    position: relative
+}
+
+    .form-check-radio a i {
+        position: absolute;
+        right: -45px;
+        top: 0;
+        height: 40px;
+        width: 40px;
+        color: rebeccapurple;
+        text-align: center;
+        align-content: center;
+    }
+
+        .form-check-radio a i:before {
+            height: 40px;
+            display: table;
+            width: 40px;
+            line-height: 40px;
+            font-size: x-large;
+            color: black;
+        }
+
+.product-page {
+    padding-top: 0 !important;
+    width: 100% !important;
+}
+
+.sidebar-left .nav li:empty {
+    display: none;
+}
+
+.popup-ext {
+    width: auto !important
+}
+
+    .popup-ext .modal-dialog {
+        max-width: 99% !important;
+        min-width: 350px !important
+    }
+
+    .popup-ext .modal-content {
+    }
+
+    .popup-ext .modal-header {
+    }
+
+    .popup-ext .modal-title {
+    }
+
+    .popup-ext .modal-body {
+        overflow: auto;
+        max-height: 75vh!important;
+    }
+
+        .popup-ext .modal-body .form {
+        }
+
+    .popup-ext .form .popuplabel {
+    }
+
+    .popup-ext td div:first-child {
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+    }
+
+    .popup-ext .w3-popup-textbox {
+        outline: none;
+        box-shadow: none !important;
+        height: 2.75rem;
+        font-size: 1.2rem;
+        background: transparent !important;
+        border: 3px solid #2f528f;
+        border-radius: 6px;
+    }
+
+    .popup-ext .w3-popup-dropdown {
+        outline: none;
+        box-shadow: none !important;
+        height: 2.75rem;
+        font-size: 1.2rem;
+        background: transparent !important;
+        border: 3px solid #2f528f;
+        border-radius: 6px;
+    }
+
+
+    .popup-ext .calendar {
+        background-color: wheat;
+    }
+
+    .popup-ext .form .popupselect {
+    }
+
+    .popup-ext .modal-footer {
+    }
+.modalBackground{
+    
+}
+.form-checkbox {
+    position: relative
+}
+
+    .form-checkbox input {
+        display: none !important;
+    }
+
+    .form-checkbox label {
+        font-size: 1.1rem;
+        padding-left: 1.5rem !important;
+        color: #fff !important;
+    }
+
+.text-warning .form-checkbox label {
+    color: #fba019 !important;
+}
+
+.form-checkbox label::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+}
+
+.form-checkbox input:checked + label:after {
+    background: #fba019;
+}
+
+.car-ins-page .py-3.bg-dark .table-responsive {
+    overflow: hidden;
+}
+.sidebar-left .banner{
+    text-align:center;
+}
+.sidebar-left .banner img {
+    max-width: 56%;
+}
+.sidebar-right ul li:first-child {
+    min-height: 80px;
+}
+.detail-purchase-page .pb-2.text-warning, .detail-vehicle-page .pb-2.text-warning, .detail-policy-page .pb-2.text-warning, .invoice-insurance-payment-page .pb-2.text-warning {
+    white-space: normal !important;
+}
+@media (max-width: 576px) {
+    .car-company-page .table tr td b {
+        white-space: normal !important;
+    }
+}

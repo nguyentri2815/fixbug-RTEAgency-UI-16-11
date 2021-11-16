@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>
+        Home Page
+    </title>
+    <script src="/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles_ext.css" />
+    <style type="text/css">
+        #timeOut {
+            background-color: yellow;
+            visibility: hidden;
+        }
+    </style>
+    <!-- <script type="text/javascript">
+        //setTimeout(function () {
+        //    alert("Your session will expire in 5 minutes.");
+        //}, 10 * 60 * 1000);
+        var IdealTimeOut = 5; //10 seconds
+        var idleSecondsTimer = null;
+        var idleSecondsCounter = 0;
+        document.onclick = function () { idleSecondsCounter = 0; };
+        document.onmousemove = function () { idleSecondsCounter = 0; };
+        document.onkeypress = function () { idleSecondsCounter = 0; };
+        idleSecondsTimer = window.setInterval(CheckIdleTime, 10 * 60 * 1000);
+
+        function CheckIdleTime() {
+            idleSecondsCounter++;
+            var oPanel = document.getElementById("timeOut");
+            if (oPanel) {
+                oPanel.innerHTML = (IdealTimeOut - idleSecondsCounter);
+            }
+            if (idleSecondsCounter >= IdealTimeOut) {
+                window.clearInterval(idleSecondsTimer);
+                alert("Your Session has expired. Please login again.");
+                //window.location = "https://www.aspsnippets.com/";
+            }
+        }
+    </script> -->
+
+</head>
+
+<body>
+    <form method="post" action="./Default" id="ctl01">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="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" />
+        </div>
+
+        <!-- <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['ctl01'];
+            if (!theForm) {
+                theForm = document.ctl01;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+//]]>
+        </script> -->
+
+
+
+        <!-- <script type="text/javascript">
+            //<![CDATA[
+            var __cultureInfo = { "name": "en-GB", "numberFormat": { "CurrencyDecimalDigits": 2, "CurrencyDecimalSeparator": ".", "IsReadOnly": true, "CurrencyGroupSizes": [3], "NumberGroupSizes": [3], "PercentGroupSizes": [3], "CurrencyGroupSeparator": ",", "CurrencySymbol": "£", "NaNSymbol": "NaN", "CurrencyNegativePattern": 1, "NumberNegativePattern": 1, "PercentPositivePattern": 1, "PercentNegativePattern": 1, "NegativeInfinitySymbol": "-∞", "NegativeSign": "-", "NumberDecimalDigits": 2, "NumberDecimalSeparator": ".", "NumberGroupSeparator": ",", "CurrencyPositivePattern": 0, "PositiveInfinitySymbol": "∞", "PositiveSign": "+", "PercentDecimalDigits": 2, "PercentDecimalSeparator": ".", "PercentGroupSeparator": ",", "PercentSymbol": "%", "PerMilleSymbol": "‰", "NativeDigits": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], "DigitSubstitution": 1 }, "dateTimeFormat": { "AMDesignator": "AM", "Calendar": { "MinSupportedDateTime": "\/Date(-62135596800000)\/", "MaxSupportedDateTime": "\/Date(253402300799999)\/", "AlgorithmType": 1, "CalendarType": 1, "Eras": [1], "TwoDigitYearMax": 2029, "IsReadOnly": true }, "DateSeparator": "/", "FirstDayOfWeek": 1, "CalendarWeekRule": 2, "FullDateTimePattern": "dd MMMM yyyy HH:mm:ss", "LongDatePattern": "dd MMMM yyyy", "LongTimePattern": "HH:mm:ss", "MonthDayPattern": "d MMMM", "PMDesignator": "PM", "RFC1123Pattern": "ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027", "ShortDatePattern": "dd/MM/yyyy", "ShortTimePattern": "HH:mm", "SortableDateTimePattern": "yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss", "TimeSeparator": ":", "UniversalSortableDateTimePattern": "yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027", "YearMonthPattern": "MMMM yyyy", "AbbreviatedDayNames": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "ShortestDayNames": ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"], "DayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "AbbreviatedMonthNames": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", ""], "MonthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", ""], "IsReadOnly": true, "NativeCalendarName": "Gregorian Calendar", "AbbreviatedMonthGenitiveNames": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", ""], "MonthGenitiveNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", ""] }, "eras": [1, "A.D.", null, 0] };//]]>
+        </script> -->
+
+        <!-- <script src="/bundles/MsAjaxJs?v=c42ygB2U07n37m_Sfa8ZbLGVu4Rr2gsBo7MvUEnJeZ81" type="text/javascript"></script> -->
+        <script src="./assets/bootstrap/jquery.js" type="text/javascript"></script>
+        <script src="./assets/bootstrap/bootstrap.js" type="text/javascript"></script>
+        <!-- <script src="Scripts/respond.min.js" type="text/javascript"></script> -->
+        <!-- <script src="/bundles/WebFormsJs?v=BUrW_USgsbM5dmjzZ0AZnmJ7q29V6wnid8eIrBJ4G4c1"
+            type="text/javascript"></script> -->
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                value="DWX0ZXv6xjb3lclRLdw3yRoECvhrHwLNGhittF4aU1vf5Sb+QUDa/qqSgslKi5r9EIzFBOlq8bhgpst6bbwvFkkp1C10SF5bWYslnlD2hTnmYRbzdpEXWGf9NzQ1Cm5n" />
+        </div>
+        <!-- <script type="text/javascript">
+            //<![CDATA[
+            Sys.WebForms.PageRequestManager._initialize('ctl00$ctl12', 'ctl01', [], [], [], 90, 'ctl00');
+//]]>
+        </script> -->
+
+        <div class="wrapper">
+            <div class="container-fluid h-100">
+                <div class="row flex-lg-nowrap h-100">
+                    <!-- Sidebar left -->
+                    <aside class="sidebar-left d-flex justify-content-between flex-wrapper">
+                        <!-- Logo -->
+                        <div class="logo-section text-lg-center">
+                            <img src="./assets/images/logos/logo_agent_1.png" id="imgLogo" alt="Logo" />
+                            <p id="nameCompany"
+                                class="m-0 mt-2 font-weight-bold text-uppercase text-left text-warning d-lg-block d-none">
+                                Untung Sewajar Sdn Bhd</p>
+                        </div>
+                        <!-- Main menu -->
+                        <nav class="nav flex-column flex-nowrap font-weight-bold text-uppercase">
+                            <ul class="pl-0 h-100 overflow-auto">
+                                <li><a href="Default">Home</a></li>
+                                <li><a href="NewCustomer">Buy Motor Insurance</a></li>
+                                <li><a href="Unavailable">Buy Non-Motor Insurance</a></li>
+                                <li><a href="Covernote">My Policies</a></li>
+                                <li><a href="ThemeDemoUI/HelpdeskList">Vehicle Breakdown Assist</a></li>
+                                <li><a href="ThemeDemoUI/ClaimsNotification">Claim Service</a></li>
+                                <li><a href="about-us">About Us</a></li>
+                                <li><a href="contact-us">Contact</a></li>
+                                <li><a href="Agency/Home">Admin</a></li>
+
+                                <li id="loginV_liRegister"><a href="Account/Register">
+                                        <span id="loginV_lblRegister">Register</span></a></li>
+                                <li id="loginV_liLogin"><a href="Account/Login" id="loginV_lnkLogin">
+                                        <span id="loginV_lblLogin">Login</span></a></li>
+
+
+
+                            </ul>
+                        </nav>
+                        <div class="banner mt-auto pb-3 d-lg-block d-none">
+                            <img src="/assets/images/home/banner.png" alt="">
+                        </div>
+                        <div class="bars d-lg-none d-flex align-items-center">
+                            <i class="fas fa-bars"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </aside>
+                    <!-- Content -->
+                    <main class=" main d-flex flex-column px-lg-2">
+                        <div class="mx-auto w-100 flex-grow-1">
+                            
+                            <!-- working area -->
+                            <div>
+                                
+    <div class="about-us-page ">
+        <h1 class="section-primary mb-0">About Us</h1>
+        <hr>
+        <div class="mt-4 mb-5 px-5 text-justify">
+
+            SAG Group is the inspiration of two childhood friends – Justin See Kok Wah and Zulkifli Rahman who’s shared passion in motorcars brought them together as business partners. In 1992, they hatched a plan and ventured into turning their love for motorcars into a profitable business. Their first attempt to enter the automobile industry was selling used cars and once they had mastered the trade, the duo decided to diversify their portfolio to include motor credit and insurance business.
+
+As the business progressed, so did their credibility, which resulted in the Group being awarded the authorized dealership for Chevrolet in 2003, Toyota and Mitsubishi in 2004, and Perodua and Proton the year after. Between 2008 and 2014, the Group expanded 4 additional brands namely KIA, Ford, Hyundai and Honda. Currently, the Group is the authorized dealer of a total of 6 new car brands (Honda, Toyota, Perodua, Proton, Ford and Mitsubishi), with 9 new car showrooms across Klang Valley, Johor, and Pahang as well as 8 after-sales service centers and four body and paint centers, with more to come. This has enabled the Group to become a one-stop center for automotive solutions from automotive sales to vehicle servicing, repair, spare parts, and accident claims.
+
+The Group, which aims to excel in every sector it operates in, also runs round-the-clock (24/7) roadside assistance call centers for subscribing insurance policyholders of their insurance principals. It is also a one-stop insurance solution center offering a full-range of products and services such as motor insurance, personal and commercial insurance, representing close to 20 general insurance and Takaful companies.
+
+            
+        </div>
+    </div>
+
+                                <div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="slideshow-container d-none">
+                                <div id="divDot" class="header-dot">
+                                    <span class="dot"></span>
+                                    
+                                </div>
+                            </div>
+                            <div class="w3-center w3-container">
+                                <span id="lblMsg"></span>
+                            </div>
+                            <div style="display: none">
+                                You session will be expired in <span id="timeOut"></span>minute(s).
+                            </div>
+                        </div>
+
+                        
+                        
+                    </main>
+                    <!-- Sidebar right -->
+                    <aside class="sidebar-right">
+                        <ul class="d-lg-flex d-block flex-column flex-wrap h-100 pl-0 text-center">
+
+                            <li class="font-segoe d-flex align-items-center justify-content-center bg-dark mb-lg-0 mb-3 shadow">
+                                What’s new?
+                              </li>
+                              <li class="mb-lg-0 mb-3">
+                                <a class="d-block h-100" href="#"><img class="img-fluid" src="./assets/images/new-1.png" alt="img-new-1"></a>
+                              </li>
+                              <li class="mb-lg-0 mb-3">
+                                <a class="d-block h-100" href="#"><img class="img-fluid" src="./assets/images/new-2.jpg" alt="img-new-2"></a>
+                              </li>
+                              <li class="mb-lg-0 mb-3">
+                                <a class="d-block h-100" href="#"><img class="img-fluid" src="./assets/images/new-3.png" alt="img-new-3"></a>
+                              </li>
+                              <li class="mb-lg-0 mb-3">
+                                <a class="d-block h-100" href="#"><img class="img-fluid" src="./assets/images/new-4.png" alt="img-new-4"></a>
+                              </li>
+
+
+
+
+                        </ul>
+
+
+                    </aside>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <!-- JS script -->
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/3dff5e4ed2.js" crossorigin="anonymous"></script>
+            <script src="/assets/js/main.js"></script>
+        </div>
+
+        <div class="d-none">
+            <div class="w3-col s12 w3-center w3-xlarge w3-gradient-blue">
+                <div class="container w3-row  w3-padding">
+                    <div class="w3-col l4 s12">
+                        <div class="f-footer-item">
+                            <div class="f-title w3-medium w3-margin">
+                                SECTION LINKS
+                            </div>
+                            <div class="f-menu w3-small">
+                                <ul class='w3-ul w3-hoverable'>
+                                    <li onclick="window.open('/covernote/', '_self'); ">Download Covernote</li>
+                                    <li onclick="window.open('/privacy-notice/', '_self'); ">Privacy Notice</li>
+                                    <li onclick="window.open('/refund-policy/', '_self'); ">Refund Policy</li>
+                                    <li onclick="window.open('/contact-us/', '_self'); ">Contact Us</li>
+                                    <li onclick="window.open('/Feedback/', '_self'); ">Feedback</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <div class="f-footer-item">
+                            <div class="f-title w3-medium w3-margin">
+                                INSURANCE PROVIDER
+                            </div>
+                            <div class="f-menu w3-small">
+                                <ul class='w3-ul w3-hoverable'>
+                                    <li onclick="window.open('http://www.rhbinsurance.com.my', '_newtab'); ">RHB
+                                        Insurance</li>
+                                    <li onclick="window.open('http://www.allianz.com.my', '_newtab'); ">Allianz</li>
+                                    <li onclick="window.open('https://www.lonpac.com/', '_newtab'); ">Lonpac</li>
+                                    <li onclick="window.open('https://www.takaful-malaysia.com.my/', '_newtab'); ">
+                                        Takaful Malaysia</li>
+                                    <li onclick="window.open('https://www.chubb.com/my-en/', '_newtab'); ">Chubb</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l4 s12">
+                        <div class="f-footer-item">
+                            <div class="f-title w3-medium w3-margin">
+                                AUTHORITY LINKS
+                            </div>
+                            <div class="f-menu w3-small">
+                                <ul class='w3-ul w3-hoverable'>
+                                    <li onclick="window.open('http://www.jpj.gov.my', '_newtab'); ">Jabatan Pengangkutan
+                                        Jalan Malaysia</li>
+                                    <li onclick="window.open('http://www.rmp.gov.my', '_newtab'); ">Polis Diraja
+                                        Malaysia</li>
+                                    <li onclick="window.open('https://sso.rmp.gov.my/', '_newtab'); ">Sistem Semakan
+                                        Online PDRM</li>
+                                    <li onclick="window.open('https://sspi.imi.gov.my/sspi/', '_newtab'); ">Semakan
+                                        Persekatan Perjalanan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 s12">
+                        <div class="f-footer-item">
+                            <div class="f-title w3-medium w3-margin">
+
+                            </div>
+                            <div class="f-menu w3-small">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col s12 w3-black w3-opacity-min">
+                    <span class="w3-small">Copyright 2019©. All Rights Reserved.
+                        <p>
+                            <span id="lblAgentName">Untung Sewajar Sdn Bhd</span>
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        var slideIndex = 0;
+        //showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            if (slides.length > 1)
+                setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>

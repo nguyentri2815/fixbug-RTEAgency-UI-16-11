@@ -1,0 +1,62 @@
+// Common background
+
+.bg-transparent {
+  background: transparent !important;
+}
+.bg-dark {
+  background: $bg-black !important;
+}
+.bg-secondary {
+  background: $bg-silver-darker !important;
+}
+.bg-warning {
+  background: $orange !important;
+}
+.bg-silver-lighter {
+  background: $bg-silver !important;
+}
+.bg-gray-lighter {
+  background: $bg-gray-lighter !important;
+}
+.bg-gray-lightest {
+  background: $bg-gray-lightest !important;
+}
+.text-black {
+  color: black !important;
+}
+.text-warning {
+  color: $text-orange !important;
+}
+.text-danger {
+  color: $text-danger !important;
+}
+.text-blue-lighter {
+  color: $blue-lighter !important;
+}
+.text-primary-lighter {
+  color: $text-primary-lighter !important;
+}
+.text-primary-lightest {
+  color: $text-primary-lightest !important;
+}
+.text-secondary {
+  color: $gray !important;
+}
+.text-green {
+  color: $text-green;
+}
+.text-white {
+  color: $white;
+}
+.text-black{
+  color: $black!important;
+}
+.border-secondary {
+  border-color: $gray !important;
+}
+.border-warning {
+  border-color: $orange !important;
+}
+.bg-silver-lighter {
+  background-color: $bg-silver-lighter;
+}

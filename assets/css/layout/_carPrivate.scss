@@ -1,0 +1,22 @@
+.car-private-page{
+    .dropdown-toggle-black{
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .table.table-borderless.bg-transparent{
+        tr{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        td{
+          width: 100%;
+          &.px-4.py-3{
+            padding-left: 0rem!important;
+            padding-right: 0rem!important;
+            padding-top: 1rem!important;
+            padding-bottom: 1rem!important;
+          }
+        }
+      }
+}

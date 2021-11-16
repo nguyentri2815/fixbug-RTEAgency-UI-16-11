@@ -1,0 +1,22 @@
+// Common carousel
+.carousel-control-next,.carousel-control-prev{
+    width: 7%;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    height: 35px;
+}
+.carousel-control-prev-icon{
+    background-image: url(../images/icons/ico-angle-left.png)!important;
+}
+.carousel-control-next-icon{
+    background-image: url(../images/icons/ico-angle-right.png)!important;
+
+}
+.carousel-control-prev,.carousel-control-next{
+    opacity: 1!important;
+}
+.carousel-item {
+    & img{
+        width: 100%;
+    }
+}

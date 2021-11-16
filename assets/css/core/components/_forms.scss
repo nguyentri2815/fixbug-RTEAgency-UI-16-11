@@ -1,0 +1,176 @@
+// Common forms
+
+form {
+  input {
+    &:focus,
+    &:hover {
+      outline: none;
+      box-shadow: none !important;
+    }
+  }
+}
+.form-group {
+  label {
+    padding-left: 10px;
+  }
+}
+.form-control {
+  height: 2.75rem;
+  border: 3px solid $border-color;
+  border-radius: 6px;
+  &.rounded-sm {
+    height: 1.5rem;
+  }
+  &.rounded-md {
+    height: 2rem;
+  }
+  &:focus,
+  &:hover {
+    border-color: $blue-darker;
+  }
+  &::placeholder {
+    color: $text-primary-lightest;
+  }
+  &.border-white.bg-transparent{
+    color: $text-primary-lightest;
+  }
+  &-silver {
+    background: $gray-200;
+    border-color: transparent;
+    &:focus {
+      background: $gray-200;
+      border-color: $gray-200;
+    }
+    &::placeholder {
+      color: $text-body;
+    }
+  }
+  &-dark {
+    color: $text-primary-lightest;
+    &:focus {
+      color: $text-primary-lightest;
+    }
+    &::placeholder {
+      color: $text-primary-lightest;
+    }
+  }
+  &.border-secondary {
+    border-color: $black !important;
+    &::placeholder {
+      color: $gray;
+    }
+  }
+}
+textarea.form-control {
+  height: $value_19;
+  &:focus,
+  &:hover {
+    border-color: $blue-darker;
+    box-shadow: none;
+  }
+}
+.form-check-radio {
+  height: 2.625rem;
+  label {
+    padding: 0 10px;
+    min-width: 16rem;
+    height: $value_4;
+    line-height: $value_4;
+    font-size: $value_1_125;
+  }
+  .form-check-input {
+    & + img {
+      display: none;
+    }
+    &:checked {
+      & + img {
+        display: block;
+      }
+    }
+  }
+}
+.form-checkbox {
+  img {
+    width: 25px;
+    height: 23px;
+  }
+  &-input {
+    &:checked {
+      & + .form-checkbox-label {
+        &::after {
+          background: $orange;
+        }
+      }
+    }
+  }
+  &-label {
+    font-size: $value_1;
+    &::after {
+      content: "";
+      left: 0;
+      @include center-vertical();
+      width: 15px;
+      height: 15px;
+      background: $white;
+    }
+  }
+}
+.form-login {
+  padding: 0.9rem 0.5rem;
+  background: #8d949a;
+  .form-control {
+    font-size: $value_0_875;
+    height: $value_3;
+    background: $gray-300;
+    color: $bg-black;
+    border-color: transparent;
+    &::placeholder {
+      color: $bg-black;
+    }
+  }
+  .btn {
+    background: $orange;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.forgot,
+.register {
+  position: relative;
+  padding-left: 40px;
+  color: $blue-lighter-100;
+  font-size: $value_1_25; //20px
+  &:hover {
+    color: $blue-lightest;
+  }
+  &::after {
+    content: "";
+    @include center-vertical();
+    left: 0;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(.././images/icons/ico-clone.png);
+    background-position: center;
+    background-size: cover;
+  }
+}
+input[type="date"] {
+  position: relative;
+  &::-webkit-calendar-picker-indicator {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

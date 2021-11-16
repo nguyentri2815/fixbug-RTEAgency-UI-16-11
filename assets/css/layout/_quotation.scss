@@ -1,0 +1,23 @@
+.quotation-page{
+    .row{
+        div{
+            font-size: 19px!important;
+            p{
+            font-size: 19px!important;
+            }
+            &[class*=col-]{
+                position: relative;
+                & span{
+                    position: absolute;
+                    left: 5px;
+                }
+            }
+        }
+    }
+    .my-4.text-right{
+        text-align: center!important;
+    }
+    .pt-5.pl-4 {
+        padding-top: 1rem!important;
+      }
+}

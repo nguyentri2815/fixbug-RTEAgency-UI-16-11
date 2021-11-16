@@ -1,0 +1,50 @@
+// Common accordion
+
+.accordion {
+  .accordion-header {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid $bg-silver-lighter;
+    font-size: $size-md;
+    font-weight: $font-weight-medium;
+    line-height: $size-lg;
+    background-color: white;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin: -6px 5px 0 0;
+      border: 0;
+      width: $size-md;
+      height: $size-md;
+      background-image: url("../images/icons/ico-minus-1.png");
+      background-repeat: no-repeat;
+    }
+    &.collapsed:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin: -9px 5px 0 0;
+      border: 0;
+      width: $size-md;
+      height: $size-md;
+      background-image: url("../images/icons/ico-plus-1.png");
+      background-repeat: no-repeat;
+    }
+  }
+  .accordion-body {
+    padding: 15px $size;
+    background-color: $bg-silver-lightest;
+    color: $bg-silver-darkest;
+  }
+}
+.accordion-top {
+  padding: 10px 20px;
+  background: $orange-lighter;
+  color: white;
+  font-size: $size-md;
+  font-weight: unset;
+  text-align: center;
+}

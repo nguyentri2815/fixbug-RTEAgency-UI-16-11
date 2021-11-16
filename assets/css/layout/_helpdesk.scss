@@ -1,0 +1,83 @@
+
+//help-hotline-page
+.list-group-contacts {
+    padding-left: 0rem;
+    li{
+      width: 100%;
+      margin: 1.5rem 0;
+      display: flex;
+      justify-content: center;
+      a{
+        img{
+          max-width: 12.5rem;//200px
+        }
+        & b{
+          padding-left: 1rem;
+          color: $black;
+          white-space: nowrap;
+        }
+      }
+      &:nth-child(even){
+        padding-left: 1rem;
+        img{
+          max-width: 3.375rem;//68px
+          margin: 0 4rem;
+        }
+      }
+      &:nth-child(3){
+        img{
+          max-width: 9.375rem;//15opx
+          margin-left: 28px;
+        }
+        b{
+          padding-left: 2.4rem;
+        }
+      }
+      &:last-child{
+        width: 100%;
+        img{
+          max-width: 11.5rem;
+          margin: 0;
+        }
+      }
+    }
+}
+
+//helpdesk-list-page
+.helpdesk-list-page{
+    ul.w-35{
+        width: 100%;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        margin-bottom: 2rem;
+    }
+}
+//helpdesk-login
+.helpdesk-login{
+
+    .btn {
+        margin-bottom: 1rem;
+    }
+    .w-85{
+        width: 100%;
+    }
+    .w-35{
+        width: 100%;
+    }
+    .form-group.mb-5{
+        margin-bottom: 0rem!important;
+    }
+    .mx-5.px-5{
+        margin-left: 1rem!important;
+        margin-right: 1rem!important;
+        padding-left: 0rem!important;
+        padding-right: 0rem!important;
+    }
+    .my-5.py-4{
+        margin-top: 0rem!important;
+        margin-bottom: 0rem!important;
+    }
+    .mt-10 {
+        margin-top: 3.5rem;
+    }
+}

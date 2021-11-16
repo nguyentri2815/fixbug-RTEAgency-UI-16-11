@@ -1,0 +1,37 @@
+//contact-us-page
+.contact-us-page{
+    .mt-4.mb-5.px-5{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .table{
+        h5{
+            white-space: nowrap;
+        }
+        tbody{
+            tr{
+                &:last-child{
+                    & p{
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        max-width: 100%!important;
+        margin-bottom: 2rem;
+        .col-7{
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin: 0 auto!important;
+        }
+    }
+    .table{
+        width: 100%;
+        margin: 0 auto!important;
+        h5{
+            padding-right: 3rem;
+        }
+    }
+}

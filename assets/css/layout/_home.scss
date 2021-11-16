@@ -1,0 +1,204 @@
+// Home section
+
+html,
+body {
+  font-family: $font-calibri;
+  font-size: $value_0_875;
+  color: $black;
+  height: 100vh;
+}
+.wrapper{
+  &.active{
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+hr {
+  margin-top: $value_0_5;
+  margin-bottom: $value_0_5;
+  height: 3px;
+  width: 100%;
+  background: $black;
+}
+ul {
+  list-style: none;
+  & a {
+    color: $blue-lighter-100;
+    font-size: 1.25rem;
+    &:hover {
+      color: $blue-lighter;
+    }
+  }
+}
+
+table.table{
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
+//global class
+[class*=-page] {
+  display: flex;
+  flex-direction: column;
+}
+.section-primary.mb-2{
+  margin-bottom: 0.3rem!important;
+}
+.sidebar-left {
+  & + .px-lg-2{
+      width: 100%;
+      padding-top: 6rem;
+  }
+}
+.section-primary{
+  text-align: center;
+}
+.section-secondary{
+  text-align: center;
+}
+.btn-lg {
+  font-size: 1.1rem;
+}
+.btn.btn-2xl{
+  font-size: 1.2rem;
+}
+.form-control {
+  height: 2.5rem;
+}
+.section-secondary{
+  font-size: 1.3rem;
+}
+
+.list-disc {
+  list-style: disc;
+}
+.list-roman {
+  list-style-type: lower-roman;
+  margin-left: -2px;
+  &:first-child{
+    ::marker{
+      padding-right: 5px;
+    }
+  }
+  li{
+    position: relative;
+    padding-left: 1rem;
+    &::before{
+      content: ")";
+      position: absolute;
+      left: -10px;
+    }
+    &:first-child{
+      padding-left: 1.2rem;
+      margin-left: -3px;
+    }
+  }
+}
+.fa-user{
+  width: 3rem;
+  height: 3rem;
+  background: $orange-lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &::before{
+    color: $white;
+    font-size: 1rem;
+    @include center()
+  }
+}
+.home-page {
+
+  &-title{
+    border-bottom: 4px solid $black;
+    h1 {
+      & span, & b{
+        line-height: 1;
+      }
+    }
+  }
+  &-content {
+    padding: 3.8rem 0; //66px
+  }
+  .btn-orange {
+    background: $orange !important;
+    & span {
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      box-shadow: -2px 3px 4px 0px #cbc5c5;
+      & span {
+        animation: fadeInRight 0.8s infinite both;
+      }
+    }
+    &-left {
+      &:hover {
+        & span {
+          animation-name: fadeInleft;
+        }
+      }
+    }
+  }
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $black;
+  z-index: 99;
+  opacity: 0.6;
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+.bars {
+  font-size: $value_3;
+  color: $orange;
+  cursor: pointer;
+  .fa-times{
+    display: none;
+  }
+  &.active{
+    .fa-times{
+      display: block;
+    }
+    .fa-bars{
+      display: none;
+    }
+  }
+}
+
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInleft {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(-5px, 0, 0);
+  }
+}
+
+

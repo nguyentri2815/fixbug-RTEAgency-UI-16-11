@@ -1,0 +1,88 @@
+// Common type
+
+.font-raleway {
+  font-family: $font-raleway !important;
+}
+.font-segoe {
+  font-family: $font-segoe !important;
+}
+.font-calibri {
+  font-family: $font-calibri !important;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-bold;
+}
+//.h1, h1 {font-size: $value_1_375;}//22px
+//.h2, h2 {font-size: $value_1_125;}//18px
+//.h3, h3 {font-size: $value_1;}//16px
+//.h4, h4 {font-size: $value_0_875;}//14px
+//.h5, h5 {font-size: $value_0_8125;}//13px
+//.h6, h6 {font-size: $value_0_75;}//12px
+
+.display-3 {
+  font-size: $value_4_125 !important;
+} //66px
+.display-4 {
+  font-size: $value_3 !important;
+} //32px
+
+.display-5 {
+  font-size: $value_2 !important;
+} //32px
+.display-6{
+  font-size: 1rem!important;
+}
+.display-7{
+  font-size: $value_1_2!important;
+}
+label,
+p,
+.form-control,
+ol {
+  font-size: 1.2rem;
+}
+label {
+  margin-bottom: $value_0_25;
+}
+p {
+  color: $black;
+}
+//small, .small {font-size: $value_0_625;} //10rem
+
+.fs-xs {
+  font-size: $font-size-xs;
+}
+
+.fw-medium {
+  font-weight: $font-weight-medium !important;
+}
+.fw-regular {
+  font-weight: $font-weight-regular !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.lh-sm {
+  line-height: 1.25rem;
+}
+.shadow {
+  box-shadow: -2px 3px 4px 0px #9c9696 !important;
+}
+.rounded-xl {
+  border-radius: 0.7rem !important;
+}
+.border-bottom-dotted {
+  border-bottom: 1px dotted $bg-silver-darker;
+}

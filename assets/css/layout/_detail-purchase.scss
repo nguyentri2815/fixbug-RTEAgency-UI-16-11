@@ -1,0 +1,26 @@
+.detail-purchase-page,.detail-vehicle-page,.detail-policy-page,.invoice-insurance-payment-page{
+    .pb-2.text-warning{
+        white-space: nowrap;
+    }
+    .table{
+
+        th,a{
+            white-space: nowrap;
+        }
+    }
+    .row{
+        .col{
+            .btn{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .btn.btn-dark.btn-3xl.text-left{
+        width: 150px;
+        height: 56px;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        display: inline-flex;
+        align-items: center;
+    }
+}

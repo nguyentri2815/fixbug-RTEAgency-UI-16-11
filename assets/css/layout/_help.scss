@@ -1,0 +1,42 @@
+
+.help-car-accident-page,.help-car-breakdown-page,.help-car-stolen-page,.help-windscreen-page{
+    .form-control{
+        height: 2.5rem;
+    }
+    .dropdown{
+        .dropdown-toggle-primary{
+            height: 100%;
+        }
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    .px-5.pt-3.h-15{
+        padding-left: 1.2rem !important;
+        padding-right: 1.2rem !important;
+    }
+    .badges {
+        width: 28px;
+        height: 28px;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+    .form-group{
+        flex-wrap: nowrap;
+        .w-50{
+            width: 80%!important;
+        }
+        .input-group-append{
+            width: 20%;
+            &.ml-3{
+                margin-left: 0!important;
+                padding-left: 1rem;
+            }
+            .btn{
+                height: 2.5rem;
+                width: 100%;
+                min-width: initial;
+            }
+        }
+    }
+}

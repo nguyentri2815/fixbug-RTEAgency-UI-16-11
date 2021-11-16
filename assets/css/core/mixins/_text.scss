@@ -1,0 +1,19 @@
+@mixin fontFamily($font) {
+  font-family: $font;
+}
+
+@mixin hidden() {
+  opacity: 0;
+  visibility: hidden;
+}
+@mixin visible() {
+  opacity: 1;
+  visibility: visible;
+}
+
+@mixin overtext($args) {
+  display: -webkit-inline-box;
+  -webkit-line-clamp: $args;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

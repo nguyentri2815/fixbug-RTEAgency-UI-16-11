@@ -1,0 +1,107 @@
+// Navs section
+
+// sidebar left
+.sidebar-left {
+    font-family: $font-raleway;
+    background: $bg-black;
+
+    width: 100%;
+    padding: 0 15px;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    .logo-section {
+        max-width: 200px;
+        padding: 1rem 0rem;
+        border-bottom: 0px;
+        p{
+            text-align: center!important;
+            padding-left: 0!important;
+
+        }
+        & img {
+            max-width: 25%;
+        }
+    }
+    .nav {
+        background: $bg-black;
+        min-width: 200px;
+        height: 100%;
+        padding: 1rem 0;
+        position: fixed;
+        top: 78px;
+        border-top: 5px solid $orange;
+        left: 0;
+        transition: all 0.4s ease-in-out;
+        transform: translateX(-100%);
+        &.active{
+            transform: translateX(0);
+        }
+        a {
+            display: block;
+            color: $text-orange;
+            transition: $transition;
+
+            padding: 10px 15px;
+            font-size: $value_0_75;
+
+            &:hover {
+                background: $black;
+            }
+        }
+        ul{
+            overflow: initial!important;
+            li{
+                &:last-child{
+                    a{
+                        &:hover{
+                            background: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        width: 100%;
+        bottom: 1%;
+        left: 0;
+        & img {
+            max-width: 100%;
+          //width: 100%;
+        }
+    }
+
+}
+
+//main
+.main{
+    width: 100%;
+    padding-top: 6rem;
+}
+
+
+//sidebar right
+.sidebar-right {
+    width: 100%;
+    & ul{
+        max-height: 65rem;
+        li{
+            & a{
+                box-shadow: none;
+                & img{
+                    width: initial;
+                    height: initial;
+                }
+            }
+            &:first-child{
+                height: 10%;
+                font-size: 3rem;
+                color: $orange-lighter;
+            }
+        }
+    }
+}
+
+
+

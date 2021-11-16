@@ -1,0 +1,32 @@
+//link-page main
+.list-square {
+    list-style: none;
+    & li {
+      position: relative;
+      margin-bottom: $value_0_75;
+      padding-left: 1.5rem;
+      &::before {
+        content: "\25AA";
+        position: absolute;
+        top: 14px;
+        left: 0;
+        margin: -1.2rem 0 0 0;
+        color: $blue-lighter-100;
+        font-weight: $font-weight-bold;
+        display: inline-block;
+        width: 1em;
+        font-size: $value_2;
+      }
+    }
+    & ul{
+      a {
+        padding-left: 0rem;
+      }
+    }
+  }
+.link-page{
+    ul{
+        margin: 0 auto;
+        padding-left: 0.5rem;
+    }
+}

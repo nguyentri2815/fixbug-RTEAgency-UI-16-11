@@ -1,0 +1,57 @@
+.invoice-insurance-payment-page{
+    .container{
+        .row.justify-content-between{
+            .col.px-1{
+                margin: 0.5rem 0;
+                div,table{
+                    height: 100%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+    .dropdown-item{
+        background-color: $bg-silver-darker;
+    }
+}
+
+//Invoice-Road Tax ké page class payment-summary-page 
+.payment-summary-page{
+    .d-flex.justify-content-end.pr-5{
+        .btn{
+            margin-bottom: 1rem;
+        }
+    }
+    .d-flex.justify-content-end.pr-5{
+        justify-content: center!important;
+        padding-right: 0rem!important;
+        .btn{
+            min-width: 160px;
+        }
+    }
+    //
+    //Invoice-Road Tax
+    .mt-20{
+        margin-top: 5.5rem;
+    }
+    .row.row-cols-xl-2.row-cols-1.mx-1{
+        flex-wrap: wrap;
+      .col.px-1{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 0.5rem;
+          .table{
+              margin-bottom: 0;
+              .dropdown-toggle-silver{
+                  white-space: nowrap;
+              }
+          }
+          .pt-2.pb-4.pr-2.text-right{
+              margin-top: 0.5rem;
+          }
+      }
+    }
+}
