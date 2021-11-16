@@ -4189,7 +4189,9 @@ body{
         .home-page-title h3.mb-4.pb-2{
             font-size: 1.5rem;
         }
-
+        .home-page-content {
+            padding: 1rem 0;
+        }
     .home-page-content .col-md-7 .pr-1.mb-3 {
         padding-right: 1rem!important;
     }
