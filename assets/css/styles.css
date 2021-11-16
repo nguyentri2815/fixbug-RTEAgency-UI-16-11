@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "SVN-Segoe Script";
-    src: url("./assets/fonts/SVN-SegoeScript.woff2") format("woff2"), url("./assets/fonts/SVN-SegoeScript.woff") format("woff");
+    src: url("/assets/fonts/SVN-SegoeScript.woff2") format("woff2"), url("/assets/fonts/SVN-SegoeScript.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Calibri";
-    src: url("./assets/fonts/Calibri.woff2") format("woff2"), url("./assets/fonts/Calibri.woff") format("woff");
+    src: url("/assets/fonts/Calibri.woff2") format("woff2"), url("/assets/fonts/Calibri.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
